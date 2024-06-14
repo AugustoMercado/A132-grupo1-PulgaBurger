@@ -9,27 +9,25 @@
 </head>
 <body>
     <header>
-        <nav class="nav-grid">
-            <div class="logo-titulo">
-                <img src="/static/img/logo.png" alt="logo" id="logo" class="nav-item">
-                <h1 class="titulo-marca">La Pulga<br>Burger</h1>
-            </div>
-            <ul class="lista-enlaces">
-                <li><a href="/inicio.html">INICIO</a></li>
-                <li><a href="/templates/nosotros.html">NOSOTROS</a></li>
-                <li><a href="/templates/menu.html">NUESTRO MENU</a></li>
-                <li>
-                    <article id="contenedor-btn-login">
-                        <i class="bi bi-person icon-user"></i>
-                        <a id="btn-login" href="/templates/login.html">INICIAR<br>SESION</a>
-                    </article>
-                </li>
-            </ul>
-        </nav>
     </header>
     <main>
-        <section class="formulario-contacto">
-            <p>HOLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+        <section class="contenedor-formulario">
+            <article class="formulario">
+                <h1 class="titulo">Iniciar sesión</h1>
+                <form action="" method="get" enctype="text/plain"id="formularioContacto">
+                    <article class="contenedor-datos-login">
+                        <label for="loginUsuario">Usuario</label>
+                        <input type="text" name="usuario" id="usuario" required="true">
+                    </article>
+                    <article class="contenedor-datos-login">
+                        <label for="loginClave">Contraseña</label>
+                        <input type="password" name="Clave" id="clave" maxlength="25" required="true">
+                    </article>
+                    <input type="submit" value="INICIAR SESIÓN" class="btn-formulario">
+                </form>
+                <h9 class="subtitulo-formulario">¿No tenés cuenta? <a href="" id="enlace-subtitulo">Crear una cuenta nueva</a></h9>
+                
+            </article>
         </section>
     </main>
     <footer>
