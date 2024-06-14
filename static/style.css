@@ -1,0 +1,111 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+/*Estilos generales*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    background-color: #FBB805;
+    flex: 1;
+}
+header{
+    background-color: #111111;
+}
+footer{
+    background-color: #111111;
+    color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+/*Estilos navegador*/
+.lista-enlaces {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.lista-enlaces li a {
+    color: #FBB805;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 1.8em;
+}
+.nav-grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.titulo-marca {
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 
+                2px 2px 0 #1E013B,  /* sombra abajo a la derecha */
+                -2px -2px 0 #1E013B, /* sombra arriba a la izquierda */
+                -2px 2px 0 #1E013B,  /* sombra abajo a la izquierda */
+                2px -2px 0 #1E013B,  /* sombra arriba a la derecha */
+                2px 0 0 #1E013B,     /* sombra a la derecha */
+                -2px 0 0 #1E013B,    /* sombra a la izquierda */
+                0 2px 0 #1E013B,     /* sombra abajo */
+                0 -2px 0 #1E013B;    /* sombra arriba */
+}
+#logo {
+    width: 200px;
+    height: auto;
+}
+
+/*Estilos footer*/
+#contacto{
+    display: flex;
+    justify-content: space-around;
+}
+.contacto-items{
+    display: flex ;
+    flex-direction: column;
+    
+}
+.lista-logos{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin:0;
+    padding-left: 0;
+}
+.logo-footer{
+    font-size: 1.5em !important;
+}
+.lista-locales{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:0;
+    padding-left: 0;
+}
+.lista-locales li{
+    flex: 1 0 33.33%;
+    padding: 2% 6%;
+}
+#copyright{
+    align-self: center;
+}
