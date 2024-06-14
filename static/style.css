@@ -18,13 +18,13 @@ main {
 }
 header{
     background-color: #111111;
+    height: 100px;
 }
 footer{
     background-color: #111111;
     color:#ffffff;
     display: flex;
     flex-direction: column;
-    
 }
 .titulo {
     font-size:2em;
@@ -115,7 +115,8 @@ footer{
 .contacto-items{
     display: flex ;
     flex-direction: column;
-    
+    margin-top: 25px;
+    align-items: center;
 }
 .lista-logos{
     list-style-type: none;
