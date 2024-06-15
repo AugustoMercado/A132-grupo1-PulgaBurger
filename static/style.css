@@ -11,7 +11,7 @@ body{
     min-height: 100vh;
 }
 main {
-    background-color: #FBB805;
+    background-color: #ffffff;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -94,17 +94,19 @@ footer{
     border-radius: 3em;
     padding: 1% 3%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+
 }
 #btn-login{
     color: #111111;
     font-size: 0.9em;
     font-weight: 800;
-    
+    margin-right: 1em;
 }
 .icon-user{
     font-size: 2em;
+    color: black;
     margin:0;
     padding: 0;
 }
@@ -300,4 +302,72 @@ footer{
         text-align: center;
     }
 
+}
+
+/* PROMO | HOJA DE ESTILOS */
+/*-------------------------------*/
+
+.promo {
+    background-image: url("./img/triplete-bg.png");
+    background-repeat:no-repeat;
+    background-position:bottom ;
+    background-size: cover;
+    padding: 3em;
+}
+
+.promo-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.promo-img {
+    width: 30em;
+    flex: 2;
+    max-width: 100%;
+    margin-right: 2em;
+    filter: drop-shadow(10px 10px 15px #141414);
+}
+
+.promo-texto {
+    flex: 1;
+    max-width: 40em;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+
+.promo-title{
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+.promo-p{
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+.promo-btn{
+    background-color: #9757DE;
+    color: #ffffff;
+    border: none;
+    padding: 1em;
+    font-size: 25px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 5px rgba(19, 19, 19, 0.527));
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .promo-flex {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+}
+
+/*SEPARADOR*/
+.separador{
+    width: 100%;
 }
