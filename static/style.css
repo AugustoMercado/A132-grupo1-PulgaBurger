@@ -1,39 +1,44 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-/*Estilos generales*/
-*{
+/* Estilos generales */
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     margin: 0;
     flex-direction: column;
     min-height: 100vh;
 }
+
 main {
-    background-color: #FBB805;
+    background-color: #FBB805; 
     flex: 1;
     display: flex;
     flex-direction: column;
 }
-header{
+
+header {
     background-color: #111111;
+    height: 100px; /* Tony */
 }
-footer{
+
+footer {
     background-color: #000000;
-    color:#ffffff;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
+
 .titulo {
-    font-size:4.5em;
-    color:#000000;
+    font-size: 4.5em;
+    color: #000000;
     font-weight: 700;
     align-self: center;
 }
 
-/*Estilos navegador*/
+/* Estilos navegador */
 .lista-enlaces {
     list-style-type: none;
     display: flex;
@@ -42,20 +47,23 @@ footer{
     margin: 0;
     padding: 0;
 }
+
 .lista-enlaces li {
     margin-right: 10%;
 }
+
 .lista-enlaces li a {
     color: #FBB805;
     text-decoration: none;
     font-family: sans-serif;
     font-weight: 200;
     font-size: 1em;
-    
 }
-#btn-pagina-actual{
+
+#btn-pagina-actual {
     font-weight: 800;
 }
+
 .nav-grid {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -68,6 +76,7 @@ footer{
     align-items: center;
     gap: 10px;
 }
+
 .titulo-marca {
     color: #ffffff;
     font-family: sans-serif;
@@ -83,10 +92,12 @@ footer{
                 0 2px 0 #1E013B,     /* sombra abajo */
                 0 -2px 0 #1E013B;    /* sombra arriba */
 }
+
 #logo {
     width: 100px;
     height: auto;
 }
+
 #contenedor-btn-login{
     width: 150%;
     background-color: #FBB805;
@@ -104,80 +115,84 @@ footer{
 }
 .icon-user{
     font-size: 2em;
+    color: black;
     margin:0;
     padding: 0;
 }
-/*Estilos footer*/
-#contacto{
+/* Estilos footer */
+#contacto {
     display: flex;
     justify-content: space-between;
     margin-top: 2em;
 }
-.contacto-items{
-    display: flex ;
+
+.contacto-items {
+    display: flex;
     flex-direction: column;
 }
-#titulo-logos{
-    justify-self:center;
+
+#titulo-logos {
+    justify-self: center;
 }
-#titulo-footer{
-    font-size:3em;
+
+#titulo-footer {
+    font-size: 3em;
 }
-.lista-logos{
+
+.lista-logos {
     list-style-type: none;
-    display: flex ;
+    display: flex;
     justify-content: space-between;
-    margin:0;
+    margin: 0;
     padding-left: 0;
     max-width: 40em;
 }
 .lista-logos li {
     margin: 0 5%;
 }
-.logo-footer{
+.logo-footer {
     font-size: 1.5em;
 }
-#desarolladores{
+#desarolladores {
     margin-right: 25%;
 }
-.lista-desarolladores{
+.lista-desarolladores {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin:-20% 0 0 0;
+    margin: -20% 0 0 0;
     padding-left: 0;
 }
-.lista-desarolladores li{
+.lista-desarolladores li {
     flex: 1;
     padding: 2% 0;
 }
-.lista-desarolladores li a{
-    color:#ffffff;
+.lista-desarolladores li a {
+    color: #ffffff;
     font-size: 1.1em;
 }
 .logo-desarolladores {
     font-size: 4em;
-    
 }
-#contenedor-titulo-logo{
+#contenedor-titulo-logo {
     display: flex;
     align-items: center;
     gap: 10%;
     width: 120%;
 }
-#contenedor-titulo-logo h4{
+#contenedor-titulo-logo h4 {
     margin-top: -10%;
 }
-
-#copyright{
+#copyright {
     align-self: center;
 }
-/*Estilos Formulario*/
+/* Estilos Formulario */
 .contenedor-formulario {
     flex: 1;
     display: flex;
 }
+
 .formulario {
     background-color: #ffffff;
     width: 90%;
@@ -189,17 +204,18 @@ footer{
     flex-direction: column;
     justify-content: space-around;
 }
-#logo-formulario{
-    width: 10em;
 
+#logo-formulario {
+    width: 10em;
 }
+
 #formularioContacto {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    
 }
-.contenedor-datos-login{
+
+.contenedor-datos-login {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -207,25 +223,29 @@ footer{
     width: 60%;
     align-self: center;
 }
-.contenedor-datos-login label{ 
+
+.contenedor-datos-login label {
     font-weight: 600;
     font-family: sans-serif;
     color: #000000;
-    font-size:medium;
+    font-size: medium;
     margin-bottom: 2%;
 }
-.contenedor-datos-login input{
+
+.contenedor-datos-login input {
     border: 0.2em solid #E0E0E0;
     border-radius: 0.3em;
     height: 3.3em;
-    color:#828282;
+    color: #828282;
 }
+
 .contenedor-datos-login input:focus {
     outline: none;
     border-color: #E0E0E0;
-    color:#828282;
+    color: #828282;
 }
-.btn-formulario{
+
+.btn-formulario {
     background-color: #000000;
     color: #ffffff;
     font-size: medium;
@@ -233,22 +253,25 @@ footer{
     align-self: center;
     border-radius: 0.3em;
     padding: 0.6em 1.5em;
-    margin-top: 8% ;
-    border:0;
+    margin-top: 8%;
+    border: 0;
     width: 60%;
 }
-.subtitulo-formulario{
+
+.subtitulo-formulario {
     align-self: self-start;
     margin: 2% 0 0 20%;
     font-size: large;
     color: #828282;
 }
-#enlace-subtitulo{
+
+#enlace-subtitulo {
     text-decoration: none;
-    color: #6A15D6
+    color: #6A15D6;
 }
-#enlace-subtitulo:hover{
-    color:#FBB805
+
+#enlace-subtitulo:hover {
+    color: #FBB805;
 }
 .contenedor-datos-personales{
     display: flex;
@@ -260,6 +283,161 @@ footer{
     width: 29%;
     display: flex;
 }
+
+/*Estilos Quienes somos*/
+
+.quienessomos {
+    background-image: url("./img/messi-bc.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 3em;
+}
+
+.quienessomos-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.quienessomos-img {
+    width: 30em;
+    flex: 2;
+    max-width: 100%;
+    margin-right: 2em;
+}
+
+.quienessomos-texto {
+    flex: 1;
+    max-width: 40em;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+
+.quienessomos-title {
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+.quienessomos-p {
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+
+/*Estilos promo*/
+.promo {
+    background-image: url("./img/triplete-bg.png");
+    background-repeat:no-repeat;
+    background-position:bottom ;
+    background-size: cover;
+    padding: 3em;
+}
+
+.promo-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.promo-img {
+    width: 30em;
+    flex: 2;
+    max-width: 100%;
+    margin: 2em;
+    filter: drop-shadow(10px 10px 15px #141414);
+}
+
+.promo-texto {
+    flex: 1;
+    max-width: 40em;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+
+.promo-title{
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+.promo-p{
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+.promo-btn{
+    background-color: #9757DE;
+    color: #ffffff;
+    border: none;
+    padding: 0.8em;
+    font-size: 20px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 5px rgba(19, 19, 19, 0.527));
+}
+
+.promo-btn:active{
+    transform: scale(0.98);
+}
+
+.promo-btn:hover{
+    background-color: #7743b3;
+}
+/*SEPARADOR*/
+.separador{
+    width: 100%;
+}
+
+/*NUESTRAS SUCURSALES*/
+
+.card{
+    font-family: Poppins;
+}
+
+.card-titulo{
+    font-size: 60px;
+    font-weight: 800;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.card-flex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding:50px 0px;
+}
+
+.card-container {
+    width: 250px;
+    height: 300px;
+    padding: 16px 16px;
+    background-color: #FFFFFF;
+    margin: 16px 16px;
+    border-radius: 1.5em;
+    color: #111111;
+    box-shadow: 2px 2px 15px #1111114f;
+    text-align: center;
+}
+
+.card-imagen{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container:hover {
+    background-color: #9757DE;
+    color: #ffffff;
+    transform: scale(1.1);
+
+}
+
 
 /*Pantallas medianas*/
 @media (max-width: 760px){
@@ -306,8 +484,49 @@ footer{
     .datos-personales input {
         width: 100%;
     }
-    
+    /*Estilos promo */
+    .promo-flex {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .promo-btn{
+        white-space: normal;
+        width: 80%;
+    }
+
+    .promo-title{
+        font-size: 10vw;
+    }
+
+    .promo-img{
+        max-width: 80%;
+    }
+
+    /*Estilos quienes somos*/
+    .quienessomos-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quienessomos-title {
+        font-size: 10vw;
+    }
+
+    .quienessomos-texto {
+        font-size: 2.5vw;
+    }
+    /*Estilos nuestras sucursales*/
+    .card-flex {
+        align-items: center;
+        flex-direction: column ;
+    }
+    .card-titulo{
+        font-size: 10vw;
+    }
+
 }
+
 
 /*Pantallas chicas*/
 @media (max-width: 400px){
