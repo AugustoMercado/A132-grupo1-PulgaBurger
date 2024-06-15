@@ -302,6 +302,13 @@ footer{
         text-align: center;
     }
 
+    .quienessomos-title{
+        font-size: 10vw;
+    }
+
+    .quienessomos-texto{
+        font-size: 2.5vw;
+    }
 }
 
 /* PROMO | HOJA DE ESTILOS */
@@ -327,7 +334,7 @@ footer{
     width: 30em;
     flex: 2;
     max-width: 100%;
-    margin-right: 2em;
+    margin: 2em;
     filter: drop-shadow(10px 10px 15px #141414);
 }
 
@@ -352,17 +359,37 @@ footer{
     background-color: #9757DE;
     color: #ffffff;
     border: none;
-    padding: 1em;
-    font-size: 25px;
+    padding: 0.8em;
+    font-size: 20px;
     border-radius: 20px;
     filter: drop-shadow(0px 0px 5px rgba(19, 19, 19, 0.527));
 }
 
-/* Estilos responsivos */
+.promo-btn:active{
+    transform: scale(0.98);
+}
+
+.promo-btn:hover{
+    background-color: #7743b3;
+}
+
 @media (max-width: 768px) {
     .promo-flex {
         flex-direction: column; 
         text-align: center;
+    }
+
+    .promo-btn{
+        white-space: normal;
+        width: 80%;
+    }
+
+    .promo-title{
+        font-size: 10vw;
+    }
+
+    .promo-img{
+        max-width: 80%;
     }
 
 }
@@ -370,4 +397,62 @@ footer{
 /*SEPARADOR*/
 .separador{
     width: 100%;
+}
+
+/*NUESRTAS SUCURSALES*/
+/*-------------------*/
+.card{
+    font-family: Poppins;
+}
+
+.card-titulo{
+    font-size: 60px;
+    font-weight: 800;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-flex{
+    display: flex;
+    justify-content: space-evenly;
+    padding:50px 0px;
+}
+
+    .card-container {
+    width: 250px;
+    height: 300px;
+    padding: 16px 16px;
+    background-color: #FFFFFF;
+    margin: 16px 16px;
+    border-radius: 1.5em;
+    color: #111111;
+    box-shadow: 2px 2px 15px #1111114f;
+  }
+
+  .card-imagen{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-container:hover {
+    background-color: #9757DE;
+    color: #ffffff;
+    transform: scale(1.1);
+
+  }
+
+  @media (max-width: 768px) {
+    .card-flex {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .card-titulo{
+        font-size: 10vw;
+    }
+
 }
