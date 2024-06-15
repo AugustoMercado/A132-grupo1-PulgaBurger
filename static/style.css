@@ -202,3 +202,55 @@ footer{
 #enlace-subtitulo{
     text-decoration: none;
 }
+
+/* QUIENES SOMOS | HOJA DE ESTILOS */
+/*-------------------------------*/
+
+.quienessomos {
+    background-image: url("./img/messi-bc.png");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 3em;
+}
+
+.quienessomos-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.quienessomos-img {
+    width: 30em;
+    flex: 2;
+    max-width: 100%;
+    margin-right: 2em;
+}
+
+.quienessomos-texto {
+    flex: 1;
+    max-width: 40em;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+
+.quienessomos-title{
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+.quienessomos-p{
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .quienessomos-flex {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+}
