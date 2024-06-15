@@ -20,11 +20,11 @@ header{
     background-color: #111111;
 }
 footer{
-    background-color: #111111;
+    background-color: #000000;
     color:#ffffff;
     display: flex;
     flex-direction: column;
-    
+    gap: 1em;
 }
 .titulo {
     font-size:4.5em;
@@ -110,19 +110,26 @@ footer{
 /*Estilos footer*/
 #contacto{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 2em;
 }
 .contacto-items{
     display: flex ;
     flex-direction: column;
-    
+}
+#titulo-logos{
+    justify-self:center;
+}
+#titulo-footer{
+    font-size:3em;
 }
 .lista-logos{
     list-style-type: none;
     display: flex ;
-    justify-content: center;
-    
+    justify-content: space-between;
+    margin:0;
     padding-left: 0;
+    max-width: 40em;
 }
 .lista-logos li {
     margin: 0 5%;
@@ -130,18 +137,39 @@ footer{
 .logo-footer{
     font-size: 1.5em;
 }
-.lista-locales{
+#desarolladores{
+    margin-right: 25%;
+}
+.lista-desarolladores{
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin:0;
+    flex-direction: column;
+    margin:-20% 0 0 0;
     padding-left: 0;
 }
-.lista-locales li{
-    flex: 1 0 33.33%;
-    padding: 2% 6%;
+.lista-desarolladores li{
+    flex: 1;
+    padding: 2% 0;
 }
+.lista-desarolladores li a{
+    color:#ffffff;
+    font-size: 1.1em;
+}
+.logo-desarolladores {
+    font-size: 4em;
+    
+}
+#contenedor-titulo-logo{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    width: 120%;
+}
+#contenedor-titulo-logo h4{
+    margin-top: -10%;
+}
+
 #copyright{
     align-self: center;
 }
@@ -212,7 +240,7 @@ footer{
 .subtitulo-formulario{
     align-self: self-start;
     margin: 2% 0 0 20%;
-    font-size: x-large;
+    font-size: large;
     color: #828282;
 }
 #enlace-subtitulo{
@@ -221,4 +249,162 @@ footer{
 }
 #enlace-subtitulo:hover{
     color:#FBB805
+}
+.contenedor-datos-personales{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+}
+.datos-personales{
+    width: 29%;
+    display: flex;
+}
+
+/*Pantallas medianas*/
+@media (max-width: 760px){
+    .titulo{
+        font-size: xx-large;
+    }
+    /*Estilos Footer*/
+    #contacto {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .lista-logos{
+        justify-content: space-evenly;
+        align-items: center;
+        max-width: 30em;
+    }
+    
+    /*Estilos Formulario*/
+    #logo-formulario{
+        width: 5em;
+    }
+    .contenedor-datos-login{
+        width: 80%;
+    }
+    .contenedor-datos-login label{ 
+        font-size:small;
+    }
+    .contenedor-datos-login input{
+        height: 2.3em;
+    }
+    .btn-formulario{
+        font-size: small;
+        width: 80%;
+    }
+    .subtitulo-formulario{
+        margin: 2% 0 0 10%;
+        font-size: small;
+    }
+    .contenedor-datos-personales{
+        display: flex;
+        margin-left: 10%;
+        width: 80%;
+    }
+    .datos-personales input {
+        width: 100%;
+    }
+    
+}
+
+/*Pantallas chicas*/
+@media (max-width: 400px){
+    .titulo{
+        font-size: x-large;
+    }
+    /*Estilos footer*/
+    .contacto-items{
+        display: flex ;
+    }
+    #titulo-logos{
+        margin-left: 4em;
+    }
+    #titulo-footer{
+        font-size:2em;
+    }
+    .lista-logos{
+        list-style-type: none;
+        display: flex ;
+        justify-content: space-between;
+        
+        align-items: center;
+        margin:0;
+        padding-left: 0;
+    }
+    .lista-logos li {
+        flex:2;
+        margin: 0 5%;
+    }
+    .logo-footer{
+        font-size: 1.5em;
+    }
+    #desarolladores{
+        margin-right: 25%;
+    }
+    .lista-desarolladores{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin:-10% 0 0 0;
+        padding-left: 0;
+    }
+    .lista-desarolladores li{
+        flex: 2 ;
+        padding: 2% 0;
+    }
+    .lista-desarolladores li a{
+        font-size: 0.7em;
+    }
+    .logo-desarolladores {
+        font-size: 2em;
+    }
+    #contenedor-titulo-logo{
+        display: flex;
+        align-items: center;
+        gap: 10%;
+        width: 120%;
+    }
+    #contenedor-titulo-logo h4{
+        margin-top: -5%;
+        font-size: medium;
+    }
+
+    #copyright{
+        font-size: x-small;
+    }
+    /*Estilos Formulario*/
+    .contenedor-formulario{
+        align-self: stretch;
+    }
+    .formulario {
+        align-self: stretch;
+        margin: 2% 0 2% 4%;
+        
+    }
+    #logo-formulario{
+        width: 4em;
+    }
+    .contenedor-datos-login{
+        width: 80%;
+    }
+    .contenedor-datos-login label{ 
+        font-size:x-small;
+    }
+    .contenedor-datos-login input{
+        height: 2em;
+        border: 0.1em solid #E0E0E0;
+    }
+    .btn-formulario{
+        font-size: x-small;
+        width: 80%;
+    }
+    .subtitulo-formulario{
+        margin: 2% 0 0 10%;
+        font-size: x-small;
+    }
+    
+
 }
