@@ -429,6 +429,7 @@ footer{
     border-radius: 1.5em;
     color: #111111;
     box-shadow: 2px 2px 15px #1111114f;
+    text-align: center;
   }
 
   .card-imagen{

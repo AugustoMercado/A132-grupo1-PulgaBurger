@@ -11,8 +11,8 @@ function clickBtn(){
         if (result.isConfirmed) {
           Swal.fire("¡Cupon de 50% de descuento!", "", "success");
         } else if (result.isDenied) {
-          Swal.fire("No accediste al descueto", "", "error");
+          Swal.fire("No accediste al descuento", "", "error");
         }
       });
-      
+
 }
