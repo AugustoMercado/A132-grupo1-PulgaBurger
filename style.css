@@ -40,7 +40,7 @@
     height: 500px !important; /* Establece la altura máxima de la imagen */
     margin-left: auto !important; /* Centra la imagen horizontalmente */
     margin-right: auto !important; /* Centra la imagen horizontalmente */
-    margin-bottom: 7% !important;
+    margin-bottom: 15% !important;
     object-fit: cover !important; /* Ajusta las imágenes al contenedor */
     background-color: rgb(255, 255, 255) !important;
     vertical-align: middle !important; /* Centra verticalmente */
@@ -58,6 +58,7 @@
     margin-top: 100% !important; /* Desplaza el texto hacia abajo */
     position: relative; /* Asegura que el posicionamiento sea relativo */
     border-color: #000000;
+    margin-bottom: 2% !important;
 
 }
 
@@ -110,6 +111,7 @@
 
     color: white;
 }
+
 
 
 
