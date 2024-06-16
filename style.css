@@ -1,0 +1,144 @@
+
+
+@media screen and (min-width: 768px) {
+    /* Para pantallas de 768px o más */
+    .caja .item {
+        flex-basis: calc(33.333% - 20px); /* 3 columnas con un margen de 20px entre ellas */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* Para pantallas de 992px o más */
+    .caja .item {
+        flex-basis: calc(25% - 20px); /* 4 columnas con un margen de 20px entre ellas */
+    }
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+/* Estilos adicionales para el carrusel */
+.carousel-indicators-prueba {
+
+    max-height: 350px !important; /* Establece la altura máxima de la caja */
+    overflow-y: auto !important; /* Agrega una barra de desplazamiento vertical si el contenido excede la altura */
+    margin: 10px auto !important; /* Centra la caja en la página y agrega espacio alrededor */
+    border: 1px solid #9355D7 !important; /* Borde gris claro */
+    background-color: #9355D7 !important; /* Fondo gris claro */
+    display: flex !important;
+    overflow-x: auto !important;
+}
+
+.carousel-itemactive-prueba {
+    height: 150px !important; /* Altura de los elementos del carrusel */
+    background-color: aqua !important;
+    text-align: center !important; /* Centra el contenido horizontalmente */
+}
+
+.carousel-item-prueba img {
+    max-width: 500px !important; /* Establece el ancho máximo de la imagen */
+    height: 500px !important; /* Establece la altura máxima de la imagen */
+    margin-left: auto !important; /* Centra la imagen horizontalmente */
+    margin-right: auto !important; /* Centra la imagen horizontalmente */
+    margin-bottom: 7% !important;
+    object-fit: cover !important; /* Ajusta las imágenes al contenedor */
+    background-color: rgb(255, 255, 255) !important;
+    vertical-align: middle !important; /* Centra verticalmente */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.carousel-caption-prueba {
+    font-size: 30px !important; /* Tamaño de fuente más pequeño */
+    color: #000000 !important; /* Color del texto */
+    background-color: rgba(255, 255, 255, 0.7) !important; /* Fondo semi-transparente */
+    padding: 5px !important; /* Espaciado interno */
+    border-radius: 5px !important; /* Bordes redondeados */
+    margin-top: 100% !important; /* Desplaza el texto hacia abajo */
+    position: relative; /* Asegura que el posicionamiento sea relativo */
+    border-color: #000000;
+
+}
+
+.p-carrusel {
+    font-size: 20px !important; /* Tamaño de fuente más pequeño */
+    margin-bottom: 1% !important; /* Sin margen adicional */
+    color: #333 !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); /* Invertir el color de las flechas */
+}
+
+
+
+
+
+.container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 0 0 calc(33.33% - 20px); /* 33.33% menos el espacio entre las tarjetas */
+    margin-bottom: 20px; /* Espacio inferior entre las filas */
+}
+
+
+.card-body .card-title {
+    background-color: #9757DE;
+}
+
+.card-body .card-text {
+    background-color: #9757DE;
+}
+
+.card-body .card-title {
+    color: #FBB805;
+    text-align: center;
+}
+
+.card-body {
+    background-color: #9757DE;
+}
+
+.card-body p {
+    text-align: center;
+
+    color: white;
+}
+
+
+
+
+
+
+
+body {
+    position: relative;
+    padding-left: 5%; /* Igual al ancho de los rectángulos amarillos */
+    padding-right: 5%; /* Igual al ancho de los rectángulos amarillos */
+    box-sizing: border-box; /* Para incluir el padding en el ancho total del cuerpo */
+}
+
+body::before,
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5%;
+    background-color: #FBB805;
+}
+
+body::before {
+    left: 0;
+}
+
+body::after {
+    right: 0;
+}
+
