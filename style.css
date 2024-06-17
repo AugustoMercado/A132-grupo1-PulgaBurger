@@ -1,19 +1,4 @@
 
-
-@media screen and (min-width: 768px) {
-    /* Para pantallas de 768px o más */
-    .caja .item {
-        flex-basis: calc(33.333% - 20px); /* 3 columnas con un margen de 20px entre ellas */
-    }
-}
-
-@media screen and (min-width: 992px) {
-    /* Para pantallas de 992px o más */
-    .caja .item {
-        flex-basis: calc(25% - 20px); /* 4 columnas con un margen de 20px entre ellas */
-    }
-}
-
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 
@@ -140,37 +125,5 @@ body::before {
 
 body::after {
     right: 0;
-}
-
-/* Media queries para tablets y dispositivos con un ancho mínimo de 768px */
-@media screen and (min-width: 768px) {
-    body {
-        font-size: 18px;
-        padding-top: 30px;
-    }
-}
-
-/* Media queries para computadoras de escritorio y dispositivos con un ancho mínimo de 992px */
-@media screen and (min-width: 992px) {
-    body {
-        font-size: 20px;
-        padding-top: 40px;
-    }
-}
-
-/* Media queries para tablets y dispositivos con un ancho mínimo de 768px */
-@media screen and (min-width: 768px) {
-    .carousel-caption-prueba{
-        font-size: 18px;
-        padding-top: 30px;
-    }
-}
-
-/* Media queries para computadoras de escritorio y dispositivos con un ancho mínimo de 992px */
-@media screen and (min-width: 992px) {
-    .carousel-caption-prueba {
-        font-size: 20px;
-        padding-top: 40px;
-    }
 }
 
