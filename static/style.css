@@ -439,22 +439,31 @@ footer {
 }
 
 /*BANNER*/
-
+.banner
+{
+    display: flex;
+    position: relative;
+}
 #imagen-banner
 {
-    width: 99%;
-    height: 50em;
-    display: flex;
+    
+    height: auto;
+    width: 100%;
+    display: block;
+
 }
 
 #celular
 {
-    width: 14em;
-    height: 25em;
+
+    top: 650px; 
+    left: 200px; 
+    width: 22%; 
+    height: auto;
+    opacity: 0%;
+    position: absolute;
     border-radius: 20%;
     transform: rotate(-8deg);
-    
-
 }
 
 
