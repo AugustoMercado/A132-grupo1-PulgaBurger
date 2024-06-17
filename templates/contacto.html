@@ -11,16 +11,17 @@
 <body>
     <header>
         <nav class="nav-grid">
+            <input type="checkbox" id="check">
             <div class="logo-titulo">
                 <img src="../static/img/logo.png" alt="logo" id="logo" class="nav-item">
                 <h1 class="titulo-marca">La Pulga<br>Burger</h1>
             </div>
             <ul class="lista-enlaces">
                 <li><a href="../index.html">INICIO</a></li>
-                <li><a href="nosotros.html">NOSOTROS</a></li>
                 <li><a href="menu.html">NUESTRO MENU</a></li>
+                <li><a href="" id="btn-pagina-actual">CONTACTO</a></li>
                 <li>
-                    <a href="login.html">
+                    <a  href="login.html">
                         <article id="contenedor-btn-login">
                             <i class="bi bi-person icon-user"></i>
                             <h6 id="btn-login">INICIAR<br>SESION</h6>
@@ -28,11 +29,51 @@
                     </a>
                 </li>
             </ul>
+            <div id="contenedor-burger">
+                <label for="check" class="checkbtn">
+                    <img src="../static/img/hamburguesa.svg" alt="">
+                </label>
+            </div>
         </nav>
     </header>
     <main>
         <section class="formulario-contacto">
-            <p>HOLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+            <section class="contenedor-menu">
+                <h1 class="titulo2">Contáctanos</h1>
+                <h4 class="subtitulo3">¿Necesitas asistencia? Completa este formulario y<br> nos comunicaremos contigo rápidamente.</h4>
+                <article class="contenedor-form-flex">
+                    <section class="form-flex-item">
+                        <form action="" method="post" enctype="text/plain"id="formularioContacto" class="flex-form-contacto">
+                            <section class="contenedor-datos-personales">
+                                <article class="contenedor-datos-login datos-personales flex-datos-personales">
+                                    <label for="formNombre">Nombre</label>
+                                    <input type="text" name="nombre" id="nombre" placeholder="Lionel" required="true">
+                                </article>
+                                <article class="contenedor-datos-login datos-personales flex-datos-personales">
+                                    <label for="formApellido">Apellido</label>
+                                    <input type="text" name="apellido" id="apellido" placeholder="Messi" required="true">
+                                </article>
+                            </section>
+                            <article class="contenedor-datos-login contenedor-form-contacto">
+                                <label for="formCorreo">Correo electrónico</label>
+                                <input type="email" name="Correo" id="correo" placeholder="LioMessi10@ejemplo.com" required="true">
+                            </article>
+                            <article class="contenedor-datos-login contenedor-form-contacto">
+                                <label for="formMensaje">Mensaje</label>
+                                <textarea name="Mensaje" id="mensaje" placeholder="Escriba su pregunta o mensaje" required="true"></textarea>
+                            </article>
+                            <input type="submit" value="ENVIAR" class="btn-formulario btn-form-contacto">
+                        </form>
+                    </section>
+                    <section class="form-flex-item">
+                        <img src="../static/img/messi.gif" alt="Lionel Messi">
+                        <h4 class="enlace-subtitulo">Horarios</h4>
+                        <h4 class="parrafo">
+                            Lunes a Sábado: 11:00 AM - 10:00 PM<br>
+                            Domingo: 12:00 PM - 8:00 PM</h4>
+                    </section>
+                </article>
+            </section>
         </section>
     </main>
     <footer>
