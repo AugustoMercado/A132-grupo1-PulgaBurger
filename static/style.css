@@ -438,6 +438,15 @@ footer {
 
 }
 
+/*BANNER*/
+
+#imagen-banner
+{
+    width: 99%;
+    height: 50em;
+    display: flex;
+}
+
 
 
 /*Pantallas medianas*/
