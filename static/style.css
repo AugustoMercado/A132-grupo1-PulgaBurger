@@ -439,6 +439,7 @@ footer {
 }
 
 
+
 /*Pantallas medianas*/
 @media (max-width: 760px){
     .titulo{
@@ -524,6 +525,7 @@ footer {
     .card-titulo{
         font-size: 10vw;
     }
+
 
 }
 
@@ -625,5 +627,8 @@ footer {
         font-size: x-small;
     }
     
+  
 
 }
+
+
