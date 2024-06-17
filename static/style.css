@@ -468,6 +468,7 @@ footer {
 
 
 
+
 /*Pantallas medianas*/
 @media (max-width: 760px){
     .titulo{
@@ -552,6 +553,13 @@ footer {
     }
     .card-titulo{
         font-size: 10vw;
+    }
+
+    /*Banner Celular tamaño*/
+    #celular {
+        top: 149px; 
+        left: 35px; 
+        width: 25%; 
     }
 
 
@@ -655,7 +663,11 @@ footer {
         font-size: x-small;
     }
     
-  
+    #celular {
+        top: 65px; 
+        left: 15px; 
+        width: 25%; 
+    }
 
 }
 
