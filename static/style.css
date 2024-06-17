@@ -7,13 +7,12 @@
 body, html{
     width: 100%;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     display: flex;
-    margin: 0;
-    padding: 0;
-    height: 100%;
     flex-direction: column;
     align-content:space-between;
     align-items: stretch;
@@ -545,18 +544,21 @@ footer {
     display: block;
 
 }
-
 #celular
 {
-
-    top: 650px; 
-    left: 200px; 
-    width: 22%; 
+    top: 46.5%;
+    left: 9.7%;
+    width: 23%;
     height: auto;
     opacity: 0%;
     position: absolute;
     border-radius: 20%;
+}
+#celular:hover
+{
     transform: rotate(-8deg);
+    transition: 0.7s;
+    opacity: 100%;
 }
 /*Estilos Menu*/
 .contenedor-menu {
