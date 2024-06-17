@@ -447,6 +447,16 @@ footer {
     display: flex;
 }
 
+#celular
+{
+    width: 14em;
+    height: 25em;
+    border-radius: 20%;
+    transform: rotate(-8deg);
+    
+
+}
+
 
 
 /*Pantallas medianas*/
