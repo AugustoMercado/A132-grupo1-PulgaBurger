@@ -19,7 +19,6 @@
 
 /* Estilos adicionales para el carrusel */
 .carousel-indicators-prueba {
-
     max-height: 350px !important; /* Establece la altura máxima de la caja */
     overflow-y: auto !important; /* Agrega una barra de desplazamiento vertical si el contenido excede la altura */
     margin: 10px auto !important; /* Centra la caja en la página y agrega espacio alrededor */
@@ -116,11 +115,6 @@
 .card-title {
     font-size: 40px;
 }
-
-
-
-
-
 
 
 body {
