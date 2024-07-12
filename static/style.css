@@ -1,4 +1,8 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+:root {
+    --color-primario: #FBB805;
+    --color-secundario: #660b8a; /**/
+}
 /* Estilos generales */
 * {
     box-sizing: border-box;
@@ -19,7 +23,7 @@ body {
 }
 
 main {
-    background-color: #FBB805; 
+    background-color: var(--color-primario); 
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -92,7 +96,7 @@ footer {
 }
 
 .lista-enlaces li a {
-    color: #FBB805;
+    color: var(--color-primario);
     text-decoration: none;
     font-family: sans-serif;
     font-weight: 200;
@@ -139,7 +143,7 @@ footer {
 
 #contenedor-btn-login{
     width: 150%;
-    background-color: #FBB805;
+    background-color: var(--color-primario);
     border-radius: 3em;
     padding: 1% 3%;
     display: flex;
@@ -322,12 +326,12 @@ footer {
 }
 
 #enlace-subtitulo {
-    text-decoration: none;
-    color: #6A15D6;
+    text-decoration: none; 
+    color: var(--color-secundario);
 }
 
 #enlace-subtitulo:hover {
-    color: #FBB805;
+    color: var(--color-primario);
 }
 .contenedor-datos-personales{
     display: flex;
@@ -463,7 +467,7 @@ footer {
 }
 
 .promo-btn{
-    background-color: #9757DE;
+    background-color: var(--color-secundario);
     color: #ffffff;
     border: none;
     padding: 0.8em;
@@ -477,7 +481,7 @@ footer {
 }
 
 .promo-btn:hover{
-    background-color: #7743b3;
+    background-color: var(--color-secundario);
 }
 /*SEPARADOR*/
 .separador{
@@ -525,41 +529,46 @@ footer {
 }
 
 .card-container:hover {
-    background-color: #9757DE;
+    background-color: var(--color-secundario);
     color: #ffffff;
     transform: scale(1.1);
 
 }
-/*BANNER*/
-.banner
-{
-    display: flex;
-    position: relative;
-}
-#imagen-banner
-{
-    
-    height: auto;
-    width: 100%;
-    display: block;
+/*Estilos banner*/
 
+.banner {
+    background-image: url("/static/img/triplete-bg2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 3rem;
 }
-#celular
-{
-    top: 46.5%;
-    left: 9.7%;
-    width: 23%;
-    height: auto;
-    opacity: 0%;
-    position: absolute;
-    border-radius: 20%;
+.banner-flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
-#celular:hover
-{
-    transform: rotate(-8deg);
-    transition: 0.7s;
-    opacity: 100%;
+.banner-img {
+    width: 20em;
+    flex: 1;
+    max-width: 100%;
 }
+.banner-texto {
+    flex: 2;
+    max-width: 40em;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    margin-right: 20%;
+}
+.banner-title {
+    font-weight: 800;
+    font-size: 5rem;
+}
+.banner-p {
+    font-weight: 300;
+    font-size: 1.8em;
+}
+
 /*Estilos Menu*/
 .contenedor-menu {
     background-color: #ffffff;
@@ -575,8 +584,8 @@ footer {
     max-height: 21.875em ;
     overflow-y: auto ; 
     margin: 0.625em auto; 
-    border: 0.063em solid #9355D7 ; 
-    background-color: #9355D7 ; 
+    border: 0.063em solid var(--color-secundario) ; 
+    background-color: var(--color-secundario) ; 
     display: flex;
     overflow-x: auto;
 }
@@ -634,20 +643,20 @@ footer {
 
 
 .card-body .card-title {
-    background-color: #9757DE;
+    background-color: var(--color-secundario);
 }
 
 .card-body .card-text {
-    background-color: #9757DE;
+    background-color: var(--color-secundario);
 }
 
 .card-body .card-title {
-    color: #FBB805;
+    color: var(--color-primario);
     text-align: center;
 }
 
 .card-body {
-    background-color: #9757DE;
+    background-color: var(--color-secundario);
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -708,7 +717,28 @@ footer {
         padding: 2% 0 2% 10%;
         
     }
-    
+    /*Estilos banner*/
+    .banner-flex {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    }
+
+    .banner-title {
+    font-size: 5vw;
+    }
+
+    .banner-texto {
+    font-size: 4vw; 
+    margin: 0; 
+    max-width: 80%; 
+    }
+
+    .banner-img {
+    max-width: 100%; 
+    width: 80vw; 
+    margin-top: 1em; 
+    }
     
     /*Estilos Footer*/
     #contacto {
@@ -776,6 +806,7 @@ footer {
     .promo-btn{
         white-space: normal;
         width: 80%;
+        
     }
 
     .promo-title{
@@ -808,6 +839,7 @@ footer {
     .card-titulo{
         font-size: 10vw;
     }
+    
     /*Estilos Card Menu*/
     .container-fluid {
         flex-direction: row;
