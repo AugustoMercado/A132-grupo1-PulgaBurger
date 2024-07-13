@@ -1,20 +1,20 @@
-async function traerDatosDeLaAPI() {
+
+async function traerDatosDeLaAPI(tipo) {
     try {
-        const response = await fetch('http://pruebapulga.kesug.com/api.php?type=burgers');
+        const response = await fetch(`https://backend-pulgaburger-1.onrender.com/${tipo}`);
         const data = await response.json();
         return data;
     } catch (error) {
-        console.error('Error al obtener los datos:', error);
-        return []; // Devolver un array vacío en caso de error
+        console.error('Error al obtener los datos desde la API:', error);
+        return await leerJson(); // Llamar a leerJson en caso de error
     }
 }
-
-document.addEventListener('DOMContentLoaded', async function() {
-    const cardContainer = document.getElementById('container-fluid');
+async function ordenarMenu(tipo){
+    const cardContainer = document.getElementById(`container-fluid-${tipo}`);
     
     try {
         // Esperar a que se resuelva la promesa
-        const hamburguesas = await traerDatosDeLaAPI();
+        const hamburguesas = await traerDatosDeLaAPI(tipo);
         
         // Verificar si hamburguesas es un array antes de iterar
         if (Array.isArray(hamburguesas)) {
@@ -36,5 +36,12 @@ document.addEventListener('DOMContentLoaded', async function() {
         }
     } catch (error) {
         console.error('Error en la carga de datos:', error);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', async function() {
+    var tipos = ['carne', 'vegan', 'acompañamientos'];
+    for (let tipo of tipos) {  // Usar for...of en lugar de for...in
+        await ordenarMenu(tipo);  // Usar await para esperar a que ordenarMenu termine
     }
 });
