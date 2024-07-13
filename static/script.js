@@ -1,7 +1,7 @@
 
 async function traerDatosDeLaAPI(tipo) {
     try {
-        const response = await fetch(`http://127.0.0.1:5000/${tipo}`);
+        const response = await fetch(`https://backend-pulgaburger-1.onrender.com/${tipo}`);
         const data = await response.json();
         return data;
     } catch (error) {
