@@ -1,7 +1,7 @@
 
 async function traerDatosDeLaAPI(tipo) {
     try {
-        const response = await fetch(`https://backend-pulgaburger-1.onrender.com/${tipo}`);
+        const response = await fetch(`http://127.0.0.1:5000/${tipo}`);
         const data = await response.json();
         return data;
     } catch (error) {
@@ -44,4 +44,13 @@ document.addEventListener('DOMContentLoaded', async function() {
     for (let tipo of tipos) {  // Usar for...of en lugar de for...in
         await ordenarMenu(tipo);  // Usar await para esperar a que ordenarMenu termine
     }
+    const toTop = document.querySelector(".to-top");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+            toTop.classList.add("active");
+        } else {
+            toTop.classList.remove("active");
+        }
+    });
 });
