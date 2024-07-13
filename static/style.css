@@ -513,15 +513,15 @@ footer {
     width: 15.625em;
     height: 18.75em;
     padding: 1em;
-    background-color: #FFFFFF;
+    background-color: var(--color-secundario);
     margin: 1em;
     border-radius: 1.5em;
-    color: #111111;
+    color: #ffffff;
     box-shadow: 0.125em 0.125em 0.938em #1111114f;
     text-align: center;
 }
 
-.card-imagen{
+.card-imagen {
     height: 12.5em;
     display: flex;
     align-items: center;
@@ -529,8 +529,8 @@ footer {
 }
 
 .card-container:hover {
-    background-color: var(--color-secundario);
-    color: #ffffff;
+    background-color: var(--color-primario);
+    color:  var(--color-secundario);
     transform: scale(1.1);
 
 }
